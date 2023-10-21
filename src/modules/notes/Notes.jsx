@@ -45,11 +45,12 @@ const Notes = () => {
                             className='outline-none border border-slate-200 focus:border-sky-400 p-2 rounded w-full h-[42px] md:w-[240px]'
                         />
                     </div>
-                    {isActiveTab === "active" ? (
-                        <ListNotes data={notes} onDelete={deleteNote} onArchive={archiveNote} />
-                    ) : (
-                        <ListNotes data={archivedNotes} onDelete={deleteNote} onArchive={archiveNote} />
-                    )}
+
+                    <ListNotes
+                        data={isActiveTab === "active" ? notes : archivedNotes}
+                        onDelete={deleteNote}
+                        onArchive={archiveNote}
+                    />
                 </div>
             </div>
             <div className='md:hidden text-slate-400 text-xs mb-6 text-center'>
