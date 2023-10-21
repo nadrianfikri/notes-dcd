@@ -72,6 +72,10 @@ const AddNote = ({ onAddNote }) => {
                     Save
                 </button>
             </form>
+
+            <div className='hidden md:block text-slate-400 text-xs md:mb-6 text-center'>
+                Build from Bogor by Fikri Nadrian, 2023
+            </div>
         </div>
     )
 }

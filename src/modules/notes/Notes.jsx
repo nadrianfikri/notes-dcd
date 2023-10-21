@@ -52,6 +52,9 @@ const Notes = () => {
                     )}
                 </div>
             </div>
+            <div className='md:hidden text-slate-400 text-xs mb-6 text-center'>
+                Build from Bogor by Fikri Nadrian, 2023
+            </div>
         </Container>
     )
 }
